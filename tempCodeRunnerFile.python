@@ -1,0 +1,8 @@
+import socket
+
+def cari_ip_website():
+    host = input("Masukkan alamat website: ")
+    ip = socket.gethostbyname(host)
+    print("Alamat IP dari", host, "adalah:", ip)
+
+cari_ip_website()
